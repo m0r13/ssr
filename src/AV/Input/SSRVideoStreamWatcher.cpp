@@ -169,7 +169,7 @@ void SSRVideoStreamWatcher::Init() {
 		dir = NULL;
 
 		// sort by creation time
-		std::sort(m_streams.begin(), m_streams.end());
+		std::sort(m_streams.rbegin(), m_streams.rend());
 
 	} catch(...) {
 		if(dir != NULL) {
